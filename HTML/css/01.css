@@ -1,6 +1,54 @@
-feColorMatrix {
-    counter-reset: blue;
-    color: aqua;
-    background-color: antiquewhite;
-    font: optional;
+* {
+   box-sizing: border-box;
+   margin: 0; 
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* div + p {
+    color: red;
+} */
+
+/* p ~ div {
+    color: brown;
+} */
+
+/* [title] {
+    color: blue;
+} */
+
+/* div[title] {
+    color: blueviolet;
+} */
+
+/* [title="S01"] {
+    color: cadetblue;
+} */
+
+/* [title~="Div"] {
+    color: red;
+} */
+
+/* [title*="Div"] {
+    color: red;
+} */
+
+[title^="S0"] {
+    color: red;
+}
+
+div:nth-last-of-type(2) {
+    color: rgb(242, 134, 2);
+}
+
+input[type="checkbox"]:checked+label {
+    color: red;
+}
+
+div:empty {
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+} 
